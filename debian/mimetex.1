@@ -1,0 +1,48 @@
+.TH MIMETEX 1 "April  7, 2004" "Mimetex"
+.SH NAME
+mimetex \- LaTeX math expressions to anti-aliased GIF images converter
+.SH SYNOPSIS
+.B mimetex
+\fI[options]\fR
+\fI[expression]\fR
+.SH DESCRIPTION
+This manual page documents briefly the
+.B mimetex
+command.
+This manual page was written for the Debian distribution
+because the original program does not have a manual page.
+.PP
+\fBmimetex\fP is a program that parses LaTeX math expressions emitting directly
+anti-aliased GIF images without intermediate dvi-to-gif conversion.
+.TP
+.BR -d
+dump gif image on stdout [default]
+
+.TP
+.BR -e\ export_file
+write gif image to export_file
+
+.TP
+.BR -f\ input_file
+read expression from input_file
+
+.TP
+.BR -m\ msglevel
+verbosity of debugging output
+
+.TP
+.BR -o
+render image with opaque background
+
+.TP
+.BR -s\ fontsize
+default fontsize, 0-5
+
+.TP
+.BR -m\ 0-99
+controls verbosity level for debugging output
+(usually used only while testing code).
+
+.SH AUTHOR
+This manual page was written by Isaac Clerencia <isaac@sindominio.net>,
+for the Debian project (but may be used by others).

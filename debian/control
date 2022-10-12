@@ -1,0 +1,20 @@
+Source: mimetex
+Section: utils
+Priority: optional
+Maintainer: Hilmar Preusse <hille42@web.de>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.5.1
+Rules-Requires-Root: no
+Homepage: http://www.forkosh.com/mimetex.html
+Vcs-Browser: https://salsa.debian.org/hilmar-guest/mimetex
+Vcs-Git: https://salsa.debian.org/hilmar-guest/mimetex.git
+
+Package: mimetex
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: LaTeX math expressions to anti-aliased GIF images converter
+ mimeTex parses LaTeX math expressions emitting directly GIF images
+ without intermediate dvi-to-gif conversion.
+ .
+ mimeTex is a standalone program that doesn't use TeX in any way, a kind
+ of lightweight alternative to MathML

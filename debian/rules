@@ -1,0 +1,9 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	$(CC) -DAA -c mimetex.c `dpkg-buildflags --get CFLAGS` `dpkg-buildflags --get CPPFLAGS`
+	$(CC) -DAA -c gifsave.c `dpkg-buildflags --get CFLAGS` `dpkg-buildflags --get CPPFLAGS`
+	$(CC) -DAA mimetex.o gifsave.o -lm -o mimetex `dpkg-buildflags --get LDFLAGS`

@@ -1,0 +1,20 @@
+Description: remove link to external files from docs.
+Origin: Hilmar Preusse <hille42@web.de>
+Forwarded: Not needed.
+Author: Hilmar Preusse <hille42@web.de>
+Last-Update: 2017-11-23
+
+Index: mimetex-1.75/mimetex.html
+===================================================================
+--- mimetex-1.75.orig/mimetex.html	2017-07-11 08:04:54.000000000 +0200
++++ mimetex-1.75/mimetex.html	2017-11-23 09:03:15.000000000 +0100
+@@ -459,8 +459,7 @@
+ 	<td> <font size="4">mimeTeX</font> </td>
+        </tr>
+        <tr align="center">
+-	<td> <img src="http://www.forkosh.com/lrender.gif"
+-	 alt="" border=0 align=middle> </td>
++	<td> &nbsp; </td>
+         <td> &nbsp; </td>
+  	<td>
+ 	 <?php mimetextag('imageI5',

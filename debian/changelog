@@ -1,0 +1,82 @@
+mimetex (1.76-2) unstable; urgency=medium
+
+  * Add Vcs-* and Homepage field.
+  * Move arguments for dh_installman & dh_link into files.
+  * Standards-Version: 4.5.1, no changes needed.
+  * Clean build dir using debian/clean.
+  * Fix typo in manual page (Closes: #668865).
+  * Lintian:
+    - Override I: debian-watch-file-is-missing
+    - I: no-dh-sequencer
+    - I: quilt-patch-missing-description
+    - P: mimetex: copyright-refers-to-symlink-license
+    - P: mimetex source: no-dep5-copyright debian/copyright
+    - P: silent-on-rules-requiring-root
+    - P: package-uses-old-debhelper-compat-version 10
+
+ -- Hilmar Preusse <hille42@web.de>  Thu, 04 Feb 2021 21:08:13 +0100
+
+mimetex (1.76-1) unstable; urgency=medium
+
+  * New release.
+  * Fix FTCBFS: Use cross compilers. (Closes: #882458). Thanks to
+    Helmut Grohne for report and patch!
+  * Update compat version to 10.
+  * Update standards version to 4.1.1. No changes needed.
+  * Remove reference to external file in manual
+    (W: mimetex: privacy-breach-generic).
+
+ -- Hilmar Preuße <hille42@web.de>  Thu, 23 Nov 2017 09:15:02 +0100
+
+mimetex (1.74-1) unstable; urgency=low
+
+  * New upstream release
+  * use quilt build/patch system
+  * Standards-Version 3.9.5 (no changes)
+  * Don't use Makefile for clean target
+
+ -- Hilmar Preuße <hille42@web.de>  Mon, 14 Jul 2014 22:06:44 +0200
+
+mimetex (1.73-2) unstable; urgency=low
+
+  * Enable hardened buildflags (Closes: #656646), Thanks to Moritz
+    Mühlenhoff
+
+ -- Hilmar Preuße <hille42@web.de>  Fri, 20 Jan 2012 21:42:31 +0100
+
+mimetex (1.73-1) unstable; urgency=low
+
+  * New maintainer (Closes: #656186)
+  * New upstream release
+    + patch for CVE-2009-1382 and CVE-2009-2459 not needed any more
+  * mimetex.html included in package (Closes: #350153)
+  * upstream URI fixed
+  * link /usr/lib/cgi-bin/mimetex.cgi pointing to /usr/bin/mimetex
+    (Closes: #440337)
+  * package is lintian clean
+
+ -- Hilmar Preuße <hille42@web.de>  Wed, 18 Jan 2012 10:36:48 +0100
+
+mimetex (1.50-1.2) unstable; urgency=low
+
+  * QA upload.
+  * Isaac retired from Debian, setting maintainer to Debian QA Group
+  * Update packaging
+
+ -- Moritz Muehlenhoff <jmm@debian.org>  Sun, 15 Jan 2012 21:14:08 +0100
+
+mimetex (1.50-1.1) unstable; urgency=high
+
+  * Non-maintainer upload by the testing Security Team.
+  * mimetex.c: replace strcpy with strninit macro that uses strncpy, adjust
+    some buffer sizes. (CVE-2009-1382)
+  * mimetex.c: disable input and counter tags. (CVE-2009-2459)
+    Thanks to Marc Deslauriers (Closes: 537254)
+
+ -- Giuseppe Iuculano <iuculano@debian.org>  Sat, 10 Oct 2009 12:26:58 +0200
+
+mimetex (1.50-1) unstable; urgency=low
+
+  * New upstream release, closes: #276687
+
+ -- Isaac Clerencia <isaac@sindominio.net>  Fri, 15 Oct 2004 18:57:01 +0200
